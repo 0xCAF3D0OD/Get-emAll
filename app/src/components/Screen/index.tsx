@@ -14,6 +14,8 @@ export type ScreenProps = {
   /** Pas de marge haute (onglets : la barre du bas gère le bas). */
   edges?: ('top' | 'bottom')[];
   contentStyle?: ViewStyle;
+  /** Pied sans marge ni fond : le contenu (panneau de retour) gère son propre fond. */
+  footerFlush?: boolean;
   /** Contenu superposé (panneau de retour, confettis). */
   overlay?: ReactNode;
 };
@@ -23,6 +25,7 @@ export function Screen({
   children,
   footer,
   footerRule = false,
+  footerFlush = false,
   scroll = true,
   edges = ['top', 'bottom'],
   contentStyle,
@@ -41,7 +44,11 @@ export function Screen({
   return (
     <SafeAreaView style={styles.safe} edges={edges}>
       {body}
-      {footer ? <View style={[styles.footer, footerRule && styles.rule]}>{footer}</View> : null}
+      {footer ? (
+        <View style={footerFlush ? null : [styles.footer, footerRule && styles.rule]}>
+          {footer}
+        </View>
+      ) : null}
       {overlay}
     </SafeAreaView>
   );

@@ -29,7 +29,7 @@ const palette: Record<
 > = {
   primary: { bg: colors.primary, shadow: colors.primaryDark, text: 'white' },
   success: { bg: colors.success, shadow: '#14502D', text: 'white' },
-  danger: { bg: colors.errorDark, shadow: '#5E130F', text: 'white' },
+  danger: { bg: colors.errorDark, shadow: colors.errorText, text: 'white' },
   secondary: { bg: colors.surface, shadow: colors.border, text: 'inkMuted', border: colors.border },
 };
 
@@ -111,7 +111,7 @@ export function Button({
               icon
             )}
             <AppText
-              variant={compact ? 'body' : 'bodyL'}
+              variant={compact ? 'body' : variant === 'secondary' ? 'bodyS' : 'bodyL'}
               weight="heavy"
               align="center"
               color={disabled ? 'inkMuted' : p.text}

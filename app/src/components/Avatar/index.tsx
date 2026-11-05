@@ -6,7 +6,7 @@ import { AppText } from '@/components/AppText';
 import { colors, type ColorToken } from '@/theme';
 import type { FaceCrop, ImageAsset } from '@/types/characters';
 
-export type AvatarSize = 40 | 44 | 56 | 64 | 80 | 96 | 120;
+export type AvatarSize = 40 | 44 | 56 | 64 | 80 | 84 | 96 | 120;
 
 export type AvatarProps = {
   image: ImageAsset;

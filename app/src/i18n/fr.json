@@ -269,5 +269,44 @@
     "sonsSous": "Bonne ou mauvaise réponse",
     "confidentialite": "Confidentialité et données",
     "suivi": "Mon suivi jobA1"
+  },
+  "lecon": {
+    "fermer": "Quitter la leçon",
+    "progression": "{{n}}/{{total}}",
+    "progressionLu": "Exercice {{n}} sur {{total}}",
+    "indicesLu": "{{n}} indices restants",
+    "passer": "Passer",
+    "verifier": "Vérifier",
+    "questionLu": "{{nom}} demande : {{question}}",
+    "reponses": "Réponses possibles",
+    "reponse": {
+      "incorrecte": "Ta réponse, incorrecte : {{texte}}",
+      "correcte": "Ta réponse, correcte : {{texte}}",
+      "bonne": "Bonne réponse : {{texte}}"
+    },
+    "juste": "Juste !",
+    "affilee": "{{n}} d’affilée · +{{xp}} XP",
+    "pasTout": "Pas tout à fait",
+    "revision": "Cette question reviendra plus tard dans ta révision.",
+    "continuer": "Continuer",
+    "compris": "Compris",
+    "chargement": "Chargement de la leçon",
+    "star": {
+      "sous": "Touche un morceau pour le placer. Méthode STAR.",
+      "lettres": {
+        "S": "Situation",
+        "T": "Tâche",
+        "A": "Action",
+        "R": "Résultat"
+      },
+      "caseVide": "{{nom}}, case vide",
+      "casePleine": "{{nom}} : {{texte}}",
+      "retirer": "Touche pour retirer ce morceau",
+      "morceaux": "Morceaux à placer",
+      "placer": "Placer : {{texte}}",
+      "placerIndice": "Va dans la première case vide",
+      "juste": "{{nom}}, bien placé : {{texte}}",
+      "faux": "{{nom}}, mal placé : {{texte}}"
+    }
   }
 }
