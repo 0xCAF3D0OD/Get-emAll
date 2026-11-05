@@ -1,6 +1,7 @@
 {
   "app": {
-    "nom": "get'emall"
+    "nom": "get'emall",
+    "marque": "get’emall"
   },
   "commun": {
     "retour": "Retour",
@@ -108,6 +109,41 @@
       "consentements": "Consentements",
       "amis": "Mes amis",
       "inconnu": "Écran à venir"
+    }
+  },
+  "entree": {
+    "etape": "Étape {{n}} sur {{total}}",
+    "progression": "Progression de l’inscription",
+    "accueil": {
+      "illustration": "Les quatre recruteurs : Marc, Nadia, Lou et Tom",
+      "titre": "Entraîne-toi aux entretiens, 5 minutes par jour",
+      "texte": "Des questions courtes adaptées à ton offre, puis un vrai entretien avec un recruteur.",
+      "commencer": "Commencer",
+      "compte": "J’ai déjà un compte"
+    },
+    "avatar": {
+      "titre": "Choisis ton personnage",
+      "texte": "Il te représente pendant les entretiens. Tu pourras le changer dans ton profil.",
+      "groupe": "Personnages"
+    },
+    "offre": {
+      "titre": "Pour quel poste tu t’entraînes ?",
+      "texte": "Tes questions seront adaptées à l’offre.",
+      "depuis": "Depuis ton suivi jobA1",
+      "ajoutee": "Ajoutée à ton suivi le {{date}}",
+      "ou": "Ou",
+      "coller": "Coller une autre offre",
+      "collerSous": "Son lien ou son texte",
+      "metier": "Pas d’offre précise",
+      "metierSous": "Choisir un métier à la place",
+      "mention": "L’offre sert seulement à préparer tes questions. Tes coordonnées ne sont jamais envoyées à l’IA.",
+      "groupe": "Offres"
+    },
+    "recruteur": {
+      "titre": "Qui te fait passer l’entretien ?",
+      "texte": "Tu pourras en changer à tout moment.",
+      "commencer": "Commencer ma première leçon",
+      "groupe": "Recruteurs"
     }
   }
 }

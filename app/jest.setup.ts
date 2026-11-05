@@ -3,3 +3,15 @@ jest.mock('expo-haptics', () => ({
   notificationAsync: jest.fn(),
   NotificationFeedbackType: { Success: 'success', Warning: 'warning', Error: 'error' },
 }));
+
+// Navigation simulée : les écrans sont testés seuls.
+jest.mock('expo-router', () => {
+  const router = { push: jest.fn(), replace: jest.fn(), back: jest.fn(), dismissAll: jest.fn() };
+  return {
+    router,
+    useRouter: () => router,
+    useLocalSearchParams: jest.fn(() => ({})),
+    Redirect: () => null,
+    Link: ({ children }: { children: unknown }) => children,
+  };
+});
