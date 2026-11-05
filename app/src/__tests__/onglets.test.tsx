@@ -29,7 +29,10 @@ test('10 entraînement : révisions, entretien rapide, allemand et anglais inact
   await renderScreen(<Entrainement />);
   expect(screen.getByRole('header', { name: 'Entraînement libre' })).toBeTruthy();
   await fireEvent.press(screen.getByRole('button', { name: /^Entretien rapide avec Lou/ }));
-  expect(router.push).toHaveBeenCalledWith('/entretien/micro');
+  expect(router.push).toHaveBeenCalledWith({
+    pathname: '/entretien/micro',
+    params: { recruteur: 'lou' },
+  });
   expect(screen.getAllByRole('button', { name: /Questions pièges/ })).toHaveLength(1);
   await fireEvent.press(screen.getByLabelText(/Deutsch/));
   expect(useReglages.getState().langue).toBe('fr');

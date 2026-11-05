@@ -62,7 +62,7 @@ export default function Entrainement() {
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`${t('entrainement.rapide', { nom: 'Lou' })}, ${t('entrainement.rapideSous')}`}
-        onPress={() => router.push('/entretien/micro')}
+        onPress={() => router.push({ pathname: '/entretien/micro', params: { recruteur: 'lou' } })}
         style={({ pressed }) => [styles.rapide, pressed && styles.pressed]}
       >
         <View style={styles.rapideTile}>

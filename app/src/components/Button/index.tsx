@@ -21,6 +21,8 @@ export type ButtonProps = {
   compact?: boolean;
   /** Variante typographique du libellé pour le bouton « ghost » (lien). */
   labelVariant?: TypographyToken;
+  /** Pour un bouton qui déplie un contenu (équivalent d'aria-expanded). */
+  expanded?: boolean;
 };
 
 const palette: Record<
@@ -46,6 +48,7 @@ export function Button({
   style,
   compact = false,
   labelVariant,
+  expanded,
 }: ButtonProps) {
   const inactive = disabled || loading;
 
@@ -55,7 +58,7 @@ export function Button({
         accessibilityRole="button"
         accessibilityLabel={accessibilityLabel ?? label}
         accessibilityHint={accessibilityHint}
-        accessibilityState={{ disabled: inactive, busy: loading }}
+        accessibilityState={{ disabled: inactive, busy: loading, expanded }}
         disabled={inactive}
         onPress={onPress}
         hitSlop={8}
@@ -79,7 +82,7 @@ export function Button({
       accessibilityRole="button"
       accessibilityLabel={accessibilityLabel ?? label}
       accessibilityHint={accessibilityHint}
-      accessibilityState={{ disabled: inactive, busy: loading }}
+      accessibilityState={{ disabled: inactive, busy: loading, expanded }}
       disabled={inactive}
       onPress={onPress}
       style={style}

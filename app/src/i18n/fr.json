@@ -308,5 +308,71 @@
       "juste": "{{nom}}, bien placé : {{texte}}",
       "faux": "{{nom}}, mal placé : {{texte}}"
     }
+  },
+  "entretien": {
+    "micro": {
+      "titre": "{{nom}} va écouter ta réponse",
+      "points": {
+        "micro": "Le micro s’active seulement quand tu touches le bouton pour répondre.",
+        "audio": "L’audio est transformé en texte, puis supprimé. Seul le texte est gardé pour ton compte-rendu.",
+        "ecrit": "Tu peux toujours répondre par écrit pendant l’entretien."
+      }
+    },
+    "quitter": "Quitter l’entretien",
+    "pause": "Pause",
+    "questionSur": "Question {{n}} sur {{total}}",
+    "demande": "{{nom}} demande",
+    "reecouter": "Réécouter la question",
+    "repondre": "Répondre à voix haute",
+    "toucheRepondre": "Touche pour répondre",
+    "enregistrement": "Enregistrement · {{temps}} sur {{max}}",
+    "enregistrementLu": "Enregistrement en cours, {{temps}} sur {{max}}",
+    "terminer": "Terminer ma réponse",
+    "toucheTerminer": "Touche pour terminer ta réponse",
+    "ecrire": "Répondre par écrit",
+    "indice": "Un indice",
+    "indiceTitre": "Indice",
+    "ecritLabel": "Ta réponse écrite",
+    "ecritPlaceholder": "Écris ta réponse ici",
+    "envoyer": "Envoyer ma réponse",
+    "reflechit": "{{nom}} réfléchit",
+    "enregistree": "Réponse enregistrée · {{temps}}",
+    "envoyee": "Réponse envoyée",
+    "taReponse": "Ta réponse",
+    "suivante": "Question suivante",
+    "voirBilan": "Voir le compte-rendu",
+    "demo": "Mode démo : réponse fictive",
+    "bilan": {
+      "titre": "Entretien terminé !",
+      "sous": "Le compte-rendu de {{nom}}",
+      "xp": "XP",
+      "questions": "questions",
+      "duree": "durée",
+      "min": "{{n}} min",
+      "xpLu": "{{n}} XP gagnés",
+      "questionsLu": "{{n}} questions sur {{total}}",
+      "dureeLu": "Durée : {{n}} minutes",
+      "criteres": {
+        "structure": "Structure de la réponse",
+        "exemples": "Exemples concrets",
+        "clarte": "Clarté et rythme",
+        "remplissage": "Mots de remplissage"
+      },
+      "notes": {
+        "solide": "Solide",
+        "a_travailler": "À travailler"
+      },
+      "conseil": "Le conseil de {{nom}}",
+      "relire": "Relire mes réponses"
+    },
+    "reecoute": {
+      "titre": "Tes réponses",
+      "question": "Question {{n}}",
+      "voir": "Voir une réponse plus forte",
+      "masquer": "Masquer le conseil",
+      "plusForte": "Une réponse plus forte",
+      "extraitLu": "Ta réponse : {{texte}}"
+    },
+    "citation": "« {{texte}} »"
   }
 }
