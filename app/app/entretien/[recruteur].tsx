@@ -60,11 +60,12 @@ export default function EntretienEcran() {
   }, [id, demarrer]);
 
   const max = entretien?.dureeMaxReponse ?? 90;
-  const question = entretien?.questions[e.rang - 1];
+  // Tant que l'entretien de ce recruteur n'est pas chargé, aucune commande n'est proposée.
+  const question = entretien?.recruteur === id ? entretien.questions[e.rang - 1] : undefined;
 
   const terminer = (reponse: string, duree: number) => {
-    envoyer({ type: 'terminerReponse', reponse, dureeSecondes: duree });
     if (!entretien) return;
+    envoyer({ type: 'terminerReponse', reponse, dureeSecondes: duree });
     void api.sendReponse(entretien.id, e.rang, { texte: reponse }).then((reaction) => {
       if (!actif.current) return;
       envoyer({ type: 'reagir', reaction });
@@ -316,7 +317,7 @@ export default function EntretienEcran() {
             </AppText>
           </View>
         ) : null}
-        {zone}
+        {question ? zone : null}
       </View>
     </Screen>
   );

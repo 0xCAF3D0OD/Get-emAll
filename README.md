@@ -21,4 +21,6 @@ npm install
 npx expo start --web   # ou --ios, --android avec Expo Go
 ```
 
-Vérifications : `npm run typecheck`, `npm run lint`, `npm test`.
+Vérifications : `npm run typecheck`, `npm run lint`, `npm test`, `npm run e2e`.
+
+Tokens, composants, machine à états de l'entretien et liste de ce qui reste à dessiner : [app/DESIGN.md](app/DESIGN.md).

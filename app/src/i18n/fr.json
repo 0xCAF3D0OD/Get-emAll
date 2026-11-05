@@ -115,7 +115,7 @@
     "etape": "Étape {{n}} sur {{total}}",
     "progression": "Progression de l’inscription",
     "accueil": {
-      "illustration": "Les quatre recruteurs : Marc, Nadia, Lou et Tom",
+      "illustration": "Les quatre recruteurs : Marc, Nadia, Lou et Tom",
       "titre": "Entraîne-toi aux entretiens, 5 minutes par jour",
       "texte": "Des questions courtes adaptées à ton offre, puis un vrai entretien avec un recruteur.",
       "commencer": "Commencer",
@@ -127,7 +127,7 @@
       "groupe": "Personnages"
     },
     "offre": {
-      "titre": "Pour quel poste tu t’entraînes ?",
+      "titre": "Pour quel poste tu t’entraînes ?",
       "texte": "Tes questions seront adaptées à l’offre.",
       "depuis": "Depuis ton suivi jobA1",
       "ajoutee": "Ajoutée à ton suivi le {{date}}",
@@ -140,7 +140,7 @@
       "groupe": "Offres"
     },
     "recruteur": {
-      "titre": "Qui te fait passer l’entretien ?",
+      "titre": "Qui te fait passer l’entretien ?",
       "texte": "Tu pourras en changer à tout moment.",
       "commencer": "Commencer ma première leçon",
       "groupe": "Recruteurs"
@@ -218,7 +218,7 @@
   "progres": {
     "titre": "Tes progrès",
     "serie": "{{n}} jours",
-    "serieTexte": "de série. Ton record : {{record}} jours.",
+    "serieTexte": "de série. Ton record : {{record}} jours.",
     "xpSemaine": "XP cette semaine",
     "lecons": "leçons",
     "entretiens": "entretiens",
@@ -230,7 +230,7 @@
       "or": "Or"
     },
     "xpJour": "XP par jour",
-    "xpJourLu": "XP par jour cette semaine : {{detail}}. Aujourd’hui : {{auj}} XP.",
+    "xpJourLu": "XP par jour cette semaine : {{detail}}. Aujourd’hui : {{auj}} XP.",
     "jours": {
       "L": "lundi",
       "M1": "mardi",
@@ -277,14 +277,14 @@
     "indicesLu": "{{n}} indices restants",
     "passer": "Passer",
     "verifier": "Vérifier",
-    "questionLu": "{{nom}} demande : {{question}}",
+    "questionLu": "{{nom}} demande : {{question}}",
     "reponses": "Réponses possibles",
     "reponse": {
-      "incorrecte": "Ta réponse, incorrecte : {{texte}}",
-      "correcte": "Ta réponse, correcte : {{texte}}",
-      "bonne": "Bonne réponse : {{texte}}"
+      "incorrecte": "Ta réponse, incorrecte : {{texte}}",
+      "correcte": "Ta réponse, correcte : {{texte}}",
+      "bonne": "Bonne réponse : {{texte}}"
     },
-    "juste": "Juste !",
+    "juste": "Juste !",
     "affilee": "{{n}} d’affilée · +{{xp}} XP",
     "pasTout": "Pas tout à fait",
     "revision": "Cette question reviendra plus tard dans ta révision.",
@@ -300,13 +300,13 @@
         "R": "Résultat"
       },
       "caseVide": "{{nom}}, case vide",
-      "casePleine": "{{nom}} : {{texte}}",
+      "casePleine": "{{nom}} : {{texte}}",
       "retirer": "Touche pour retirer ce morceau",
       "morceaux": "Morceaux à placer",
-      "placer": "Placer : {{texte}}",
+      "placer": "Placer : {{texte}}",
       "placerIndice": "Va dans la première case vide",
-      "juste": "{{nom}}, bien placé : {{texte}}",
-      "faux": "{{nom}}, mal placé : {{texte}}"
+      "juste": "{{nom}}, bien placé : {{texte}}",
+      "faux": "{{nom}}, mal placé : {{texte}}"
     }
   },
   "entretien": {
@@ -341,9 +341,9 @@
     "taReponse": "Ta réponse",
     "suivante": "Question suivante",
     "voirBilan": "Voir le compte-rendu",
-    "demo": "Mode démo : réponse fictive",
+    "demo": "Mode démo : réponse fictive",
     "bilan": {
-      "titre": "Entretien terminé !",
+      "titre": "Entretien terminé !",
       "sous": "Le compte-rendu de {{nom}}",
       "xp": "XP",
       "questions": "questions",
@@ -351,7 +351,7 @@
       "min": "{{n}} min",
       "xpLu": "{{n}} XP gagnés",
       "questionsLu": "{{n}} questions sur {{total}}",
-      "dureeLu": "Durée : {{n}} minutes",
+      "dureeLu": "Durée : {{n}} minutes",
       "criteres": {
         "structure": "Structure de la réponse",
         "exemples": "Exemples concrets",
@@ -371,7 +371,7 @@
       "voir": "Voir une réponse plus forte",
       "masquer": "Masquer le conseil",
       "plusForte": "Une réponse plus forte",
-      "extraitLu": "Ta réponse : {{texte}}"
+      "extraitLu": "Ta réponse : {{texte}}"
     },
     "citation": "« {{texte}} »"
   },
@@ -413,7 +413,7 @@
       "relance": "Relance conseillée",
       "attente": "En attente"
     },
-    "candidatureLu": "{{poste}}, {{entreprise}}, {{detail}}. Statut : {{statut}}",
+    "candidatureLu": "{{poste}}, {{entreprise}}, {{detail}}. Statut : {{statut}}",
     "entrainer": "S’entraîner pour cet entretien"
   }
 }

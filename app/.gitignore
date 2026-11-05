@@ -8,3 +8,7 @@ ios/
 android/
 *.tsbuildinfo
 .env*.local
+
+# Playwright
+test-results/
+playwright-report/

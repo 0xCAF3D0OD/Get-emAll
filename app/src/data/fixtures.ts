@@ -98,22 +98,22 @@ const choixPointsForts = (id: string): ExerciceChoix => ({
   id,
   type: 'choix',
   consigne: 'Choisis la réponse la plus convaincante',
-  question: '« Quels sont vos principaux points forts pour ce poste ? »',
+  question: '« Quels sont vos principaux points forts pour ce poste ? »',
   options: [
-    { id: 'a', texte: '« Je suis perfectionniste et très motivé. »' },
+    { id: 'a', texte: '« Je suis perfectionniste et très motivé. »' },
     {
       id: 'b',
       texte:
-        '« J’automatise : j’ai réduit le temps de déploiement de mon équipe en passant à la CI/CD. »',
+        '« J’automatise : j’ai réduit le temps de déploiement de mon équipe en passant à la CI/CD. »',
     },
-    { id: 'c', texte: '« Je m’adapte à tout, je sais tout faire. »' },
+    { id: 'c', texte: '« Je m’adapte à tout, je sais tout faire. »' },
   ],
   bonneReponse: 'b',
   explicationJuste:
     'Un fait concret et son résultat convainquent plus qu’un adjectif. Le recruteur peut le vérifier et te relancer dessus.',
   explicationFausse: {
-    a: '« Perfectionniste » est la réponse que les recruteurs entendent le plus. Elle ne prouve rien. Préfère un fait concret avec son résultat, comme la réponse cochée.',
-    c: '« Je sais tout faire » ne se vérifie pas et inquiète le recruteur. Préfère un fait concret avec son résultat, comme la réponse cochée.',
+    a: '« Perfectionniste » est la réponse que les recruteurs entendent le plus. Elle ne prouve rien. Préfère un fait concret avec son résultat, comme la réponse cochée.',
+    c: '« Je sais tout faire » ne se vérifie pas et inquiète le recruteur. Préfère un fait concret avec son résultat, comme la réponse cochée.',
   },
 });
 
@@ -151,7 +151,7 @@ export const lecons: Record<string, Lecon> = {
           { id: 't', texte: 'On m’a confié de les fiabiliser.', lettre: 'T' },
         ],
         explicationJuste:
-          'Situation, tâche, action, résultat : le recruteur suit ton histoire et retient le chiffre de la fin.',
+          'Situation, tâche, action, résultat : le recruteur suit ton histoire et retient le chiffre de la fin.',
         explicationFausse:
           'Commence par la situation, puis ce qu’on t’a demandé, ce que tu as fait, et termine par le résultat chiffré.',
       },
@@ -165,26 +165,26 @@ export const questionsEntretien: Record<RecruiterId, Entretien['questions']> = {
     {
       id: 'lou-1',
       texte: 'Parlez-moi de vous.',
-      indice: 'Présent, passé, futur : ton poste actuel, ton parcours, puis pourquoi ce poste.',
+      indice: 'Présent, passé, futur : ton poste actuel, ton parcours, puis pourquoi ce poste.',
     },
     {
       id: 'lou-2',
       texte: 'Racontez-moi un incident en production que vous avez dû gérer.',
-      indice: 'Méthode STAR : situation, tâche, action, résultat chiffré.',
+      indice: 'Méthode STAR : situation, tâche, action, résultat chiffré.',
     },
     {
       id: 'lou-3',
-      texte: 'Pourquoi notre entreprise ?',
+      texte: 'Pourquoi notre entreprise ?',
       indice: 'Cite un fait précis sur l’entreprise et relie-le à ton expérience.',
     },
     {
       id: 'lou-4',
-      texte: 'Quel est votre principal point faible ?',
+      texte: 'Quel est votre principal point faible ?',
       indice: 'Un vrai point faible, et ce que tu fais déjà pour progresser.',
     },
     {
       id: 'lou-5',
-      texte: 'Avez-vous des questions pour nous ?',
+      texte: 'Avez-vous des questions pour nous ?',
       indice: 'Prépare deux questions sur l’équipe ou les premiers mois.',
     },
   ],
@@ -196,39 +196,39 @@ export const questionsEntretien: Record<RecruiterId, Entretien['questions']> = {
     },
     {
       id: 'marc-2',
-      texte: 'Comment mettriez-vous en place un pipeline CI/CD pour une nouvelle équipe ?',
+      texte: 'Comment mettriez-vous en place un pipeline CI/CD pour une nouvelle équipe ?',
       indice: 'Étapes, outils, et comment tu mesures que ça marche.',
     },
     {
       id: 'marc-3',
-      texte: 'Comment diagnostiquez-vous un service devenu lent ?',
+      texte: 'Comment diagnostiquez-vous un service devenu lent ?',
       indice: 'Mesurer d’abord, puis isoler, puis corriger.',
     },
     {
       id: 'marc-4',
-      texte: 'Quelle erreur technique vous a le plus appris ?',
+      texte: 'Quelle erreur technique vous a le plus appris ?',
       indice: 'L’erreur, sa cause, et ce que tu as changé depuis.',
     },
     {
       id: 'marc-5',
-      texte: 'Comment documentez-vous votre travail ?',
+      texte: 'Comment documentez-vous votre travail ?',
       indice: 'Pour qui, où, et un exemple concret.',
     },
   ],
   nadia: [
     {
       id: 'nadia-1',
-      texte: 'Pourquoi quittez-vous votre poste actuel ?',
-      indice: 'Reste positif : ce que tu cherches, pas ce que tu fuis.',
+      texte: 'Pourquoi quittez-vous votre poste actuel ?',
+      indice: 'Reste positif : ce que tu cherches, pas ce que tu fuis.',
     },
     {
       id: 'nadia-2',
-      texte: 'Où vous voyez-vous dans cinq ans ?',
+      texte: 'Où vous voyez-vous dans cinq ans ?',
       indice: 'Une direction réaliste, liée au poste.',
     },
     {
       id: 'nadia-3',
-      texte: 'Pourquoi devrions-nous vous choisir plutôt qu’un autre candidat ?',
+      texte: 'Pourquoi devrions-nous vous choisir plutôt qu’un autre candidat ?',
       indice: 'Deux atouts prouvés par des faits, liés à l’offre.',
     },
     {
@@ -238,7 +238,7 @@ export const questionsEntretien: Record<RecruiterId, Entretien['questions']> = {
     },
     {
       id: 'nadia-5',
-      texte: 'Quelles sont vos prétentions salariales ?',
+      texte: 'Quelles sont vos prétentions salariales ?',
       indice: 'Une fourchette basée sur le marché suisse pour ce poste.',
     },
   ],
@@ -250,23 +250,23 @@ export const questionsEntretien: Record<RecruiterId, Entretien['questions']> = {
     },
     {
       id: 'tom-2',
-      texte: 'Tu as déjà travaillé dans une petite équipe ?',
+      texte: 'Tu as déjà travaillé dans une petite équipe ?',
       indice: 'Un exemple où tu as dû toucher à tout.',
     },
     {
       id: 'tom-3',
       texte:
-        'On bouge vite ici. Comment tu gères quand les priorités changent en cours de sprint ?',
+        'On bouge vite ici. Comment tu gères quand les priorités changent en cours de sprint ?',
       indice: 'Un exemple réel et comment tu as prévenu l’équipe.',
     },
     {
       id: 'tom-4',
-      texte: 'Qu’est-ce que tu apprends en ce moment ?',
+      texte: 'Qu’est-ce que tu apprends en ce moment ?',
       indice: 'Un sujet précis et pourquoi.',
     },
     {
       id: 'tom-5',
-      texte: 'Pourquoi une start-up ?',
+      texte: 'Pourquoi une start-up ?',
       indice: 'Ce qui te plaît vraiment dans ce rythme.',
     },
   ],
@@ -280,11 +280,11 @@ export const reactionsDemo: Reaction[] = [
   },
   { expression: 'ravi', phrase: 'Merci, c’est exactement ce que je voulais entendre.' },
   { expression: 'dubitatif', phrase: 'Je ne suis pas sûre de voir ce que vous avez fait, vous.' },
-  { expression: 'decu', phrase: 'C’est un peu court. Avez-vous un exemple précis ?' },
+  { expression: 'decu', phrase: 'C’est un peu court. Avez-vous un exemple précis ?' },
 ];
 
 export const reponseDemo =
-  '« En mars, notre cluster de production est tombé pendant une mise à jour. J’ai… »';
+  '« En mars, notre cluster de production est tombé pendant une mise à jour. J’ai… »';
 
 export const bilan: Bilan = {
   recruteur: 'lou',
@@ -304,42 +304,42 @@ export const bilan: Bilan = {
     {
       rang: 1,
       question: 'Parlez-moi de vous.',
-      extrait: '« Je suis ingénieur DevOps junior, formé à 42 Lausanne… »',
+      extrait: '« Je suis ingénieur DevOps junior, formé à 42 Lausanne… »',
       note: 'solide',
       reponsePlusForte:
-        'Termine par le lien avec le poste : « … et c’est pour ça que votre équipe plateforme m’attire. »',
+        'Termine par le lien avec le poste : « … et c’est pour ça que votre équipe plateforme m’attire. »',
     },
     {
       rang: 2,
       question: 'Racontez-moi un incident en production que vous avez dû gérer.',
-      extrait: '« Alors euh… c’était un déploiement qui a cassé, et donc… »',
+      extrait: '« Alors euh… c’était un déploiement qui a cassé, et donc… »',
       note: 'a_travailler',
       reponsePlusForte:
-        'Situation en une phrase, puis ton action précise, puis le résultat chiffré : « Le service est revenu en 12 minutes, et on a ajouté un test pour éviter que ça se reproduise. »',
+        'Situation en une phrase, puis ton action précise, puis le résultat chiffré : « Le service est revenu en 12 minutes, et on a ajouté un test pour éviter que ça se reproduise. »',
     },
     {
       rang: 3,
-      question: 'Pourquoi notre entreprise ?',
-      extrait: '« Votre plateforme tourne sur Kubernetes, c’est ce que je pratique… »',
+      question: 'Pourquoi notre entreprise ?',
+      extrait: '« Votre plateforme tourne sur Kubernetes, c’est ce que je pratique… »',
       note: 'solide',
       reponsePlusForte:
-        'Ajoute ce que tu apporterais : « … et j’ai déjà migré deux services vers Kubernetes. »',
+        'Ajoute ce que tu apporterais : « … et j’ai déjà migré deux services vers Kubernetes. »',
     },
     {
       rang: 4,
-      question: 'Quel est votre principal point faible ?',
-      extrait: '« Je prends parfois trop de choses en même temps… »',
+      question: 'Quel est votre principal point faible ?',
+      extrait: '« Je prends parfois trop de choses en même temps… »',
       note: 'solide',
       reponsePlusForte:
-        'Donne l’outil que tu utilises déjà : « Je note tout dans un tableau de priorités chaque lundi. »',
+        'Donne l’outil que tu utilises déjà : « Je note tout dans un tableau de priorités chaque lundi. »',
     },
     {
       rang: 5,
-      question: 'Avez-vous des questions pour nous ?',
-      extrait: '« Comment se passent les trois premiers mois ? »',
+      question: 'Avez-vous des questions pour nous ?',
+      extrait: '« Comment se passent les trois premiers mois ? »',
       note: 'solide',
       reponsePlusForte:
-        'Ajoute une question sur l’équipe : « Avec qui travaillerais-je au quotidien ? »',
+        'Ajoute une question sur l’équipe : « Avec qui travaillerais-je au quotidien ? »',
     },
   ],
 };

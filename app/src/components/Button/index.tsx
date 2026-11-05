@@ -62,6 +62,7 @@ export function Button({
         accessibilityLabel={accessibilityLabel ?? label}
         accessibilityHint={accessibilityHint}
         accessibilityState={{ disabled: inactive, busy: loading, expanded }}
+        aria-expanded={expanded}
         disabled={inactive}
         onPress={onPress}
         hitSlop={8}
@@ -87,6 +88,7 @@ export function Button({
       accessibilityLabel={accessibilityLabel ?? label}
       accessibilityHint={accessibilityHint}
       accessibilityState={{ disabled: inactive, busy: loading, expanded }}
+      aria-expanded={expanded}
       disabled={inactive}
       onPress={onPress}
       style={style}
