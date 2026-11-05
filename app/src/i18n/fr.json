@@ -8,5 +8,87 @@
     "continuer": "Continuer",
     "changer": "Changer",
     "ouvreJobA1": "ouvre jobA1 dans le navigateur"
-  }
+  },
+  "personnages": {
+    "recruteurs": {
+      "lou": {
+        "nom": "Lou",
+        "role": "Recruteuse RH, bienveillante",
+        "presentation": "Lou pose des questions classiques avec bienveillance. Idéale pour commencer."
+      },
+      "tom": {
+        "nom": "Tom",
+        "role": "Fondateur de start-up, décontracté",
+        "presentation": "Tom va droit au but et te tutoie. Il veut savoir comment tu travailles au quotidien."
+      },
+      "marc": {
+        "nom": "Marc",
+        "role": "Manager technique, précis",
+        "presentation": "Marc creuse tes compétences et attend des exemples concrets, avec des chiffres."
+      },
+      "nadia": {
+        "nom": "Nadia",
+        "role": "RH senior, exigeante",
+        "presentation": "Nadia relance chaque réponse floue. Idéale quand tu te sens prêt."
+      }
+    },
+    "niveaux": {
+      "1": "Facile",
+      "2": "Moyen",
+      "3": "Difficile"
+    },
+    "niveauLu": "Niveau {{niveau}}, {{n}} sur 3",
+    "expressions": {
+      "f": {
+        "neutre": "attentive",
+        "ecoute": "à l’écoute",
+        "reflechit": "pensive",
+        "ravi": "ravie",
+        "dubitatif": "dubitative",
+        "impressionne": "impressionnée",
+        "decu": "déçue",
+        "fier": "fière",
+        "nerveux": "nerveuse",
+        "concentre": "concentrée"
+      },
+      "m": {
+        "neutre": "attentif",
+        "ecoute": "à l’écoute",
+        "reflechit": "pensif",
+        "ravi": "ravi",
+        "dubitatif": "dubitatif",
+        "impressionne": "impressionné",
+        "decu": "déçu",
+        "fier": "fier",
+        "nerveux": "nerveux",
+        "concentre": "concentré"
+      }
+    },
+    "alt": "{{nom}}, {{expression}}",
+    "altCandidat": "Ton personnage, {{expression}}",
+    "avatars": {
+      "avatar-01": "Avatar pêche, cheveux bouclés, pull vert",
+      "avatar-02": "Avatar orange, cheveux courts, sweat gris",
+      "avatar-03": "Avatar rose, cheveux longs, robe jaune à pois",
+      "avatar-04": "Avatar avec chignon, gilet vert à rayures",
+      "avatar-05": "Avatar rose avec couettes, salopette",
+      "avatar-06": "Avatar orange avec casquette, pull à motifs",
+      "avatar-07": "Avatar avec foulard",
+      "avatar-08": "Avatar barbu, veste bleu marine",
+      "avatar-09": "Avatar aux cheveux blancs, lunettes, manteau prune",
+      "avatar-10": "Avatar à moustache blanche, lunettes, veste en tweed",
+      "avatar-11": "Avatar en tenue de chantier, casque à la main"
+    },
+    "reflechit": "{{nom}} réfléchit",
+    "expressionsCandidat": {
+      "neutre": "l’air souriant",
+      "fier": "l’air fier",
+      "nerveux": "l’air nerveux",
+      "concentre": "l’air concentré"
+    }
+  },
+  "scene": {
+    "decor": "Bureau de {{nom}}"
+  },
+  "confetti": "Confettis"
 }
