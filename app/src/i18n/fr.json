@@ -1,0 +1,419 @@
+{
+  "app": {
+    "nom": "get'emall",
+    "marque": "get’emall"
+  },
+  "commun": {
+    "retour": "Retour",
+    "fermer": "Fermer",
+    "continuer": "Continuer",
+    "changer": "Changer",
+    "ouvreJobA1": "ouvre jobA1 dans le navigateur"
+  },
+  "personnages": {
+    "recruteurs": {
+      "lou": {
+        "nom": "Lou",
+        "role": "Recruteuse RH, bienveillante",
+        "presentation": "Lou pose des questions classiques avec bienveillance. Idéale pour commencer."
+      },
+      "tom": {
+        "nom": "Tom",
+        "role": "Fondateur de start-up, décontracté",
+        "presentation": "Tom va droit au but et te tutoie. Il veut savoir comment tu travailles au quotidien."
+      },
+      "marc": {
+        "nom": "Marc",
+        "role": "Manager technique, précis",
+        "presentation": "Marc creuse tes compétences et attend des exemples concrets, avec des chiffres."
+      },
+      "nadia": {
+        "nom": "Nadia",
+        "role": "RH senior, exigeante",
+        "presentation": "Nadia relance chaque réponse floue. Idéale quand tu te sens prêt."
+      }
+    },
+    "niveaux": {
+      "1": "Facile",
+      "2": "Moyen",
+      "3": "Difficile"
+    },
+    "niveauLu": "Niveau {{niveau}}, {{n}} sur 3",
+    "expressions": {
+      "f": {
+        "neutre": "attentive",
+        "ecoute": "à l’écoute",
+        "reflechit": "pensive",
+        "ravi": "ravie",
+        "dubitatif": "dubitative",
+        "impressionne": "impressionnée",
+        "decu": "déçue",
+        "fier": "fière",
+        "nerveux": "nerveuse",
+        "concentre": "concentrée"
+      },
+      "m": {
+        "neutre": "attentif",
+        "ecoute": "à l’écoute",
+        "reflechit": "pensif",
+        "ravi": "ravi",
+        "dubitatif": "dubitatif",
+        "impressionne": "impressionné",
+        "decu": "déçu",
+        "fier": "fier",
+        "nerveux": "nerveux",
+        "concentre": "concentré"
+      }
+    },
+    "alt": "{{nom}}, {{expression}}",
+    "altCandidat": "Ton personnage, {{expression}}",
+    "avatars": {
+      "avatar-01": "Avatar pêche, cheveux bouclés, pull vert",
+      "avatar-02": "Avatar orange, cheveux courts, sweat gris",
+      "avatar-03": "Avatar rose, cheveux longs, robe jaune à pois",
+      "avatar-04": "Avatar avec chignon, gilet vert à rayures",
+      "avatar-05": "Avatar rose avec couettes, salopette",
+      "avatar-06": "Avatar orange avec casquette, pull à motifs",
+      "avatar-07": "Avatar avec foulard",
+      "avatar-08": "Avatar barbu, veste bleu marine",
+      "avatar-09": "Avatar aux cheveux blancs, lunettes, manteau prune",
+      "avatar-10": "Avatar à moustache blanche, lunettes, veste en tweed",
+      "avatar-11": "Avatar en tenue de chantier, casque à la main"
+    },
+    "reflechit": "{{nom}} réfléchit",
+    "expressionsCandidat": {
+      "neutre": "l’air souriant",
+      "fier": "l’air fier",
+      "nerveux": "l’air nerveux",
+      "concentre": "l’air concentré"
+    }
+  },
+  "scene": {
+    "decor": "Bureau de {{nom}}"
+  },
+  "confetti": "Confettis",
+  "onglets": {
+    "parcours": "Parcours",
+    "entrainement": "Entraînement",
+    "progres": "Progrès",
+    "profil": "Profil"
+  },
+  "aDessiner": {
+    "texte": "Cet écran n’est pas encore dessiné. Il viendra dans une prochaine version.",
+    "ecrans": {
+      "connexion": "Se connecter avec jobA1",
+      "confidentialite": "Confidentialité et données",
+      "metier": "Choisir un métier",
+      "coller": "Coller une autre offre",
+      "pause": "Pause",
+      "consentements": "Consentements",
+      "amis": "Mes amis",
+      "inconnu": "Écran à venir"
+    }
+  },
+  "entree": {
+    "etape": "Étape {{n}} sur {{total}}",
+    "progression": "Progression de l’inscription",
+    "accueil": {
+      "illustration": "Les quatre recruteurs : Marc, Nadia, Lou et Tom",
+      "titre": "Entraîne-toi aux entretiens, 5 minutes par jour",
+      "texte": "Des questions courtes adaptées à ton offre, puis un vrai entretien avec un recruteur.",
+      "commencer": "Commencer",
+      "compte": "J’ai déjà un compte"
+    },
+    "avatar": {
+      "titre": "Choisis ton personnage",
+      "texte": "Il te représente pendant les entretiens. Tu pourras le changer dans ton profil.",
+      "groupe": "Personnages"
+    },
+    "offre": {
+      "titre": "Pour quel poste tu t’entraînes ?",
+      "texte": "Tes questions seront adaptées à l’offre.",
+      "depuis": "Depuis ton suivi jobA1",
+      "ajoutee": "Ajoutée à ton suivi le {{date}}",
+      "ou": "Ou",
+      "coller": "Coller une autre offre",
+      "collerSous": "Son lien ou son texte",
+      "metier": "Pas d’offre précise",
+      "metierSous": "Choisir un métier à la place",
+      "mention": "L’offre sert seulement à préparer tes questions. Tes coordonnées ne sont jamais envoyées à l’IA.",
+      "groupe": "Offres"
+    },
+    "recruteur": {
+      "titre": "Qui te fait passer l’entretien ?",
+      "texte": "Tu pourras en changer à tout moment.",
+      "commencer": "Commencer ma première leçon",
+      "groupe": "Recruteurs"
+    }
+  },
+  "parcours": {
+    "stats": {
+      "serie": "jours",
+      "serieLu": "Série de {{n}} jours",
+      "xp": "/ {{objectif}} XP",
+      "xpLu": "{{n}} XP sur {{objectif}} aujourd’hui",
+      "indices": "indices",
+      "indicesLu": "{{n}} indices restants"
+    },
+    "offre": {
+      "intro": "Tu t’entraînes pour l’offre",
+      "titre": "{{poste}} chez {{entreprise}}",
+      "changer": "Changer",
+      "changerLu": "Changer d’offre"
+    },
+    "route": "Ta route vers le poste",
+    "etapeSur": "Étape {{n}} sur {{total}}",
+    "etape": "Étape {{n}} · {{statut}}",
+    "statuts": {
+      "terminee": "terminée",
+      "en_cours": "en cours",
+      "verrouillee": "verrouillée"
+    },
+    "lecons": {
+      "faite": "faite",
+      "en_cours": "en cours",
+      "a_venir": "à venir"
+    },
+    "continuer": "Continuer · {{lecon}}",
+    "listeLu": "Les 5 étapes de ta route"
+  },
+  "entrainement": {
+    "titre": "Entraînement libre",
+    "texte": "En dehors de ton parcours, à ton rythme.",
+    "revisions": "Révisions",
+    "revisionsSous": "{{n}} questions que tu avais ratées",
+    "rapide": "Entretien rapide avec {{nom}}",
+    "rapideSous": "3 questions · 5 min",
+    "themes": "Par thème",
+    "langue": "Langue de l’entretien",
+    "bientot": "bientôt disponible",
+    "theme": {
+      "pieges": {
+        "titre": "Questions pièges",
+        "sous": "Défauts, échecs, salaire",
+        "compte": "12 questions"
+      },
+      "star": {
+        "titre": "Méthode STAR",
+        "sous": "Raconter une situation",
+        "compte": "8 exercices"
+      },
+      "techniques": {
+        "titre": "Questions techniques",
+        "sous": "Adaptées à ton offre",
+        "compte": "15 questions"
+      },
+      "salaire": {
+        "titre": "Négocier son salaire",
+        "sous": "Marché suisse",
+        "compte": "6 exercices"
+      }
+    },
+    "langues": {
+      "fr": "Français",
+      "de": "Deutsch",
+      "en": "English"
+    }
+  },
+  "progres": {
+    "titre": "Tes progrès",
+    "serie": "{{n}} jours",
+    "serieTexte": "de série. Ton record : {{record}} jours.",
+    "xpSemaine": "XP cette semaine",
+    "lecons": "leçons",
+    "entretiens": "entretiens",
+    "classement": "Classement de la semaine",
+    "classementSous": "Tu es {{rang}}e en ligue {{ligue}}",
+    "ligues": {
+      "bronze": "Bronze",
+      "argent": "Argent",
+      "or": "Or"
+    },
+    "xpJour": "XP par jour",
+    "xpJourLu": "XP par jour cette semaine : {{detail}}. Aujourd’hui : {{auj}} XP.",
+    "jours": {
+      "L": "lundi",
+      "M1": "mardi",
+      "M2": "mercredi",
+      "J": "jeudi",
+      "V": "vendredi",
+      "S": "samedi",
+      "Auj.": "aujourd’hui"
+    },
+    "competences": "Compétences",
+    "maitrise": "Maîtrisé",
+    "enCours": "En cours · {{p}} %",
+    "aCommencer": "À commencer",
+    "derniers": "Derniers entretiens",
+    "avec": "Avec {{nom}} · {{date}}"
+  },
+  "profil": {
+    "changerAvatar": "Changer d’avatar",
+    "monEntrainement": "Mon entraînement",
+    "recruteur": "Recruteur",
+    "offre": "Offre visée",
+    "changerRecruteur": "Changer de recruteur",
+    "changerOffre": "Changer d’offre",
+    "objectif": "Objectif quotidien",
+    "objectifLu": "{{n}} XP par jour",
+    "objectifDuree": {
+      "10": "Environ 3 minutes par jour.",
+      "20": "Environ 5 minutes par jour.",
+      "30": "Environ 8 minutes par jour.",
+      "50": "Environ 12 minutes par jour."
+    },
+    "reglages": "Rappels et réglages",
+    "rappel": "Rappel quotidien",
+    "rappelSous": "Tous les jours à {{heure}}",
+    "sons": "Sons et vibrations",
+    "sonsSous": "Bonne ou mauvaise réponse",
+    "confidentialite": "Confidentialité et données",
+    "suivi": "Mon suivi jobA1"
+  },
+  "lecon": {
+    "fermer": "Quitter la leçon",
+    "progression": "{{n}}/{{total}}",
+    "progressionLu": "Exercice {{n}} sur {{total}}",
+    "indicesLu": "{{n}} indices restants",
+    "passer": "Passer",
+    "verifier": "Vérifier",
+    "questionLu": "{{nom}} demande : {{question}}",
+    "reponses": "Réponses possibles",
+    "reponse": {
+      "incorrecte": "Ta réponse, incorrecte : {{texte}}",
+      "correcte": "Ta réponse, correcte : {{texte}}",
+      "bonne": "Bonne réponse : {{texte}}"
+    },
+    "juste": "Juste !",
+    "affilee": "{{n}} d’affilée · +{{xp}} XP",
+    "pasTout": "Pas tout à fait",
+    "revision": "Cette question reviendra plus tard dans ta révision.",
+    "continuer": "Continuer",
+    "compris": "Compris",
+    "chargement": "Chargement de la leçon",
+    "star": {
+      "sous": "Touche un morceau pour le placer. Méthode STAR.",
+      "lettres": {
+        "S": "Situation",
+        "T": "Tâche",
+        "A": "Action",
+        "R": "Résultat"
+      },
+      "caseVide": "{{nom}}, case vide",
+      "casePleine": "{{nom}} : {{texte}}",
+      "retirer": "Touche pour retirer ce morceau",
+      "morceaux": "Morceaux à placer",
+      "placer": "Placer : {{texte}}",
+      "placerIndice": "Va dans la première case vide",
+      "juste": "{{nom}}, bien placé : {{texte}}",
+      "faux": "{{nom}}, mal placé : {{texte}}"
+    }
+  },
+  "entretien": {
+    "micro": {
+      "titre": "{{nom}} va écouter ta réponse",
+      "points": {
+        "micro": "Le micro s’active seulement quand tu touches le bouton pour répondre.",
+        "audio": "L’audio est transformé en texte, puis supprimé. Seul le texte est gardé pour ton compte-rendu.",
+        "ecrit": "Tu peux toujours répondre par écrit pendant l’entretien."
+      }
+    },
+    "quitter": "Quitter l’entretien",
+    "pause": "Pause",
+    "questionSur": "Question {{n}} sur {{total}}",
+    "demande": "{{nom}} demande",
+    "reecouter": "Réécouter la question",
+    "repondre": "Répondre à voix haute",
+    "toucheRepondre": "Touche pour répondre",
+    "enregistrement": "Enregistrement · {{temps}} sur {{max}}",
+    "enregistrementLu": "Enregistrement en cours, {{temps}} sur {{max}}",
+    "terminer": "Terminer ma réponse",
+    "toucheTerminer": "Touche pour terminer ta réponse",
+    "ecrire": "Répondre par écrit",
+    "indice": "Un indice",
+    "indiceTitre": "Indice",
+    "ecritLabel": "Ta réponse écrite",
+    "ecritPlaceholder": "Écris ta réponse ici",
+    "envoyer": "Envoyer ma réponse",
+    "reflechit": "{{nom}} réfléchit",
+    "enregistree": "Réponse enregistrée · {{temps}}",
+    "envoyee": "Réponse envoyée",
+    "taReponse": "Ta réponse",
+    "suivante": "Question suivante",
+    "voirBilan": "Voir le compte-rendu",
+    "demo": "Mode démo : réponse fictive",
+    "bilan": {
+      "titre": "Entretien terminé !",
+      "sous": "Le compte-rendu de {{nom}}",
+      "xp": "XP",
+      "questions": "questions",
+      "duree": "durée",
+      "min": "{{n}} min",
+      "xpLu": "{{n}} XP gagnés",
+      "questionsLu": "{{n}} questions sur {{total}}",
+      "dureeLu": "Durée : {{n}} minutes",
+      "criteres": {
+        "structure": "Structure de la réponse",
+        "exemples": "Exemples concrets",
+        "clarte": "Clarté et rythme",
+        "remplissage": "Mots de remplissage"
+      },
+      "notes": {
+        "solide": "Solide",
+        "a_travailler": "À travailler"
+      },
+      "conseil": "Le conseil de {{nom}}",
+      "relire": "Relire mes réponses"
+    },
+    "reecoute": {
+      "titre": "Tes réponses",
+      "question": "Question {{n}}",
+      "voir": "Voir une réponse plus forte",
+      "masquer": "Masquer le conseil",
+      "plusForte": "Une réponse plus forte",
+      "extraitLu": "Ta réponse : {{texte}}"
+    },
+    "citation": "« {{texte}} »"
+  },
+  "classement": {
+    "titre": "Classement",
+    "onglets": "Type de classement",
+    "maLigue": "Ma ligue",
+    "mesAmis": "Mes amis",
+    "ligue": "Ligue {{ligue}}",
+    "ligueSous": "Se termine dans {{n}} jours · personne ne descend",
+    "liste": "Classement de la ligue",
+    "rangLu": "{{place}} place, {{nom}}, {{xp}} XP",
+    "rangMoiLu": "{{place}} place, toi, visible comme {{nom}}, {{xp}} XP",
+    "toi": "Toi",
+    "visible": "Visible comme « {{nom}} »",
+    "xp": "{{n}} XP",
+    "montent": "Les {{n}} premiers montent en ligue {{ligue}}",
+    "note": "Ton nom n’est jamais affiché. Tu peux quitter le classement dans ton profil.",
+    "amisVide": "Tes amis apparaîtront ici.",
+    "premiere": "1re",
+    "nieme": "{{n}}e"
+  },
+  "suivi": {
+    "titre": "Mon suivi jobA1",
+    "synchro": "Synchronisé avec app.joba1.ch · il y a {{n}} min",
+    "profil": "Ton profil",
+    "complet": "{{n}} % complet",
+    "completLu": "Profil complet à {{n}} %",
+    "completer": "Compléter sur jobA1",
+    "orp": "Recherches ORP de {{mois}}",
+    "orpCompte": "{{n}} sur {{objectif}}",
+    "orpLu": "{{n}} recherches sur {{objectif}}",
+    "orpReste": "Encore {{n}} d’ici le {{date}}. Les preuves sont gardées sur jobA1.",
+    "candidatures": "Mes candidatures",
+    "toutVoir": "Tout voir",
+    "toutVoirLu": "Voir toutes mes candidatures",
+    "statuts": {
+      "entretien": "Entretien",
+      "relance": "Relance conseillée",
+      "attente": "En attente"
+    },
+    "candidatureLu": "{{poste}}, {{entreprise}}, {{detail}}. Statut : {{statut}}",
+    "entrainer": "S’entraîner pour cet entretien"
+  }
+}
