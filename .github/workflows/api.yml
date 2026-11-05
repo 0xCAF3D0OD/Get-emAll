@@ -1,0 +1,45 @@
+name: api
+
+on:
+  pull_request:
+    paths: ['api/**', '.github/workflows/api.yml']
+  push:
+    branches: [main]
+    paths: ['api/**', '.github/workflows/api.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: getemall_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      GETEMALL_TEST_DATABASE_URL: postgresql+psycopg://postgres:postgres@localhost:5432/getemall_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.13'
+      - name: Dépendances
+        run: uv sync --frozen
+      - name: Format
+        run: uv run ruff format --check .
+      - name: Lint
+        run: uv run ruff check .
+      - name: Typage
+        run: uv run mypy src tests
+      - name: Tests
+        run: uv run pytest -q
