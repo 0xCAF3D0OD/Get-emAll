@@ -90,5 +90,24 @@
   "scene": {
     "decor": "Bureau de {{nom}}"
   },
-  "confetti": "Confettis"
+  "confetti": "Confettis",
+  "onglets": {
+    "parcours": "Parcours",
+    "entrainement": "Entraînement",
+    "progres": "Progrès",
+    "profil": "Profil"
+  },
+  "aDessiner": {
+    "texte": "Cet écran n’est pas encore dessiné. Il viendra dans une prochaine version.",
+    "ecrans": {
+      "connexion": "Se connecter avec jobA1",
+      "confidentialite": "Confidentialité et données",
+      "metier": "Choisir un métier",
+      "coller": "Coller une autre offre",
+      "pause": "Pause",
+      "consentements": "Consentements",
+      "amis": "Mes amis",
+      "inconnu": "Écran à venir"
+    }
+  }
 }
