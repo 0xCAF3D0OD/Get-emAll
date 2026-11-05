@@ -77,7 +77,7 @@ export function FeedbackPanel({
   const hopStyle = useAnimatedStyle(() => ({ transform: [{ translateY: hop.value }] }));
   const popStyle = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
 
-  const ink = ok ? 'success' : 'errorText';
+  const ink = ok ? 'successText' : 'errorText';
   return (
     <Animated.View
       accessibilityLiveRegion="polite"

@@ -154,8 +154,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderWidth: 2,
     borderStyle: 'dashed',
-    // TODO(maquette) : le pointillé de la maquette (#CFC3B3) n'est pas un token ; border le remplace.
-    borderColor: colors.border,
+    borderColor: colors.borderDashed,
     borderRadius: radius.button,
     paddingHorizontal: spacing.lg,
     minHeight: 54,

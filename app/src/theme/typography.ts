@@ -24,6 +24,8 @@ export const typography = {
   h4: { fontFamily: fonts.title, fontSize: 18, lineHeight: 24 },
   bodyL: { fontFamily: fonts.body, fontSize: 17, lineHeight: 24 },
   question: { fontFamily: fonts.bodyBold, fontSize: 17, lineHeight: 24 },
+  /** Question dans la bulle de l'entretien (la maquette mesure 18 px). */
+  bubble: { fontFamily: fonts.bodyBold, fontSize: 18, lineHeight: 25 },
   body: { fontFamily: fonts.body, fontSize: 16, lineHeight: 23 },
   bodyS: { fontFamily: fonts.body, fontSize: 15, lineHeight: 21 },
   caption: { fontFamily: fonts.body, fontSize: 14, lineHeight: 20 },

@@ -26,19 +26,20 @@ avec les données de `src/data/fixtures.ts`. Aucun enregistrement audio n'est co
 
 Valeurs exactes de la maquette (table « Tokens de design » du PROMPT).
 
-| Groupe               | Tokens                                                                                       |
-| -------------------- | -------------------------------------------------------------------------------------------- |
-| Fonds                | `bg` #FFF7EE, `surface` #FFFFFF, `surfaceMuted` #F6F0E8, `track` #EFE7DC                     |
-| Bordures             | `border` #EADFD0, `borderStrong` #F1E8DC                                                     |
-| Texte                | `ink` #26243B, `inkMuted` #625C70, `white`                                                   |
-| Primaire             | `primary` #2D4FCB, `primaryDark` #1F3A9E, `primaryLight` #E9EEFF, `primaryRing` #C9D3FF      |
-| Réussite             | `success` #1E6B3F, `successBg` #DDF1E4, `successFill` #9FD8B5, `successDark` #6FB68D         |
-| Erreur               | `error` #A3261E, `errorDark` #8C1D18, `errorText` #5C1A15, `errorBg` #FDE7E4                 |
-| Avertissement        | `warningBg` #FFE9B8, `warningText` #6B4500, `hintStroke` #8A5A00                             |
-| Jeu                  | `streak` #FF9F6B, `streakBg` #FFE6D6, `xp` #FFC94D, `coral` #FF8FA3                          |
-| Décor                | `lavender` #B9A6E8, `lavenderBg` #E6DEFA, `peachBg` #FFE3D3                                  |
-| Ajoutés (décision D) | `starS` #A9D3F2, `starT` #C9B8EE, `infoBg` #DCEBFA, `streakText` #9A3F0E, `leagueBg` #EDEAF2 |
-| Médailles            | `medalGold` #FFC94D, `medalSilver` #D9D4CC, `medalBronze` #E9A777                            |
+| Groupe                | Tokens                                                                                                                                                                      |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fonds                 | `bg` #FFF7EE, `surface` #FFFFFF, `surfaceMuted` #F6F0E8, `track` #EFE7DC                                                                                                    |
+| Bordures              | `border` #EADFD0, `borderStrong` #F1E8DC                                                                                                                                    |
+| Texte                 | `ink` #26243B, `inkMuted` #625C70, `white`                                                                                                                                  |
+| Primaire              | `primary` #2D4FCB, `primaryDark` #1F3A9E, `primaryLight` #E9EEFF, `primaryRing` #C9D3FF                                                                                     |
+| Réussite              | `success` #1E6B3F, `successBg` #DDF1E4, `successFill` #9FD8B5, `successDark` #6FB68D                                                                                        |
+| Erreur                | `error` #A3261E, `errorDark` #8C1D18, `errorText` #5C1A15, `errorBg` #FDE7E4                                                                                                |
+| Avertissement         | `warningBg` #FFE9B8, `warningText` #6B4500, `hintStroke` #8A5A00                                                                                                            |
+| Jeu                   | `streak` #FF9F6B, `streakBg` #FFE6D6, `xp` #FFC94D, `coral` #FF8FA3                                                                                                         |
+| Décor                 | `lavender` #B9A6E8, `lavenderBg` #E6DEFA, `peachBg` #FFE3D3                                                                                                                 |
+| Ajoutés (décision D)  | `starS` #A9D3F2, `starT` #C9B8EE, `infoBg` #DCEBFA, `streakText` #9A3F0E, `leagueBg` #EDEAF2                                                                                |
+| Décidés le 05.11.2026 | `borderDashed` #958A7B (pointillé STAR, 3,2:1 sur bg), `successText` #1E4D31 (explication de réussite), `successShadow` #134A2B, `errorShadow` #5C1A15 (ombres des boutons) |
+| Médailles             | `medalGold` #FFC94D, `medalSilver` #D9D4CC, `medalBronze` #E9A777                                                                                                           |
 
 Les contrastes de chaque paire réellement utilisée sont testés (`contrast.test.ts`) :
 4,5:1 pour le texte, 3:1 pour les contours et icônes porteuses de sens.
@@ -55,7 +56,8 @@ Fredoka pour les titres, Nunito pour le texte. Tailles en px (interligne) :
 | `h3`       | Fredoka 600 | 19 (24)                                   |
 | `h4`       | Fredoka 600 | 18 (24)                                   |
 | `bodyL`    | Nunito 400  | 17 (24)                                   |
-| `question` | Nunito 700  | 17 (24)                                   |
+| `question` | Nunito 700  | 17 (24), questions des exercices          |
+| `bubble`   | Nunito 700  | 18 (25), question de la bulle d'entretien |
 | `body`     | Nunito 400  | 16 (23)                                   |
 | `bodyS`    | Nunito 400  | 15 (21)                                   |
 | `caption`  | Nunito 400  | 14 (20)                                   |
@@ -181,8 +183,6 @@ d'écran ; animations réduites respectées ; contrastes testés ; espaces insé
 12. Classement : onglet « Mes amis » et moyen d'ajouter un ami (`src/api/fake.ts`).
 13. Classement : « Quitter le classement » est annoncé sur l'écran 13 mais absent du profil.
 14. Profil : seule la durée de l'objectif 20 XP (5 min) figure dans la maquette.
-15. STAR : la bordure pointillée de la maquette (#CFC3B3) n'est pas un token ; `border` la
-    remplace.
 
 ### TODO(asset)
 
@@ -193,13 +193,12 @@ d'écran ; animations réduites respectées ; contrastes testés ; espaces insé
 
 ## Teintes de la maquette hors tokens
 
-Relevées pendant le squelette, à trancher (ajouter un token ou garder le remplaçant) :
+Tranché le 05.11.2026 : toutes les teintes relevées pendant le squelette ont désormais un token.
 
-| Où                                         | Maquette | Codé avec               |
-| ------------------------------------------ | -------- | ----------------------- |
-| Cases vides de l'exercice STAR (pointillé) | #CFC3B3  | `border` #EADFD0        |
-| Texte d'explication du panneau de réussite | #1E4D31  | `success` #1E6B3F       |
-| Ombre du bouton « Continuer » de réussite  | #134A2B  | #14502D (dans `Button`) |
-
-Écart de taille : la question dans la bulle de l'entretien mesure 18 px sur la maquette, le
-token `question` fait 17 px (gardé).
+| Où                                         | Maquette | Token                                        |
+| ------------------------------------------ | -------- | -------------------------------------------- |
+| Cases vides de l'exercice STAR (pointillé) | #CFC3B3  | `borderDashed` #958A7B, pour atteindre 3:1   |
+| Texte d'explication du panneau de réussite | #1E4D31  | `successText` (le titre reste en `success`)  |
+| Ombre du bouton de réussite                | #134A2B  | `successShadow`                              |
+| Ombre du bouton d'erreur                   | #5C1A15  | `errorShadow`                                |
+| Question dans la bulle de l'entretien      | 18 px    | variante `bubble` (`question` reste à 17 px) |

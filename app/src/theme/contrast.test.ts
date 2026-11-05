@@ -22,6 +22,7 @@ const texte: [string, keyof typeof colors, keyof typeof colors][] = [
   ['onglet actif', 'primary', 'primaryLight'],
   ['texte sur sélection', 'primaryDark', 'primaryLight'],
   ['texte de réussite sur panneau', 'success', 'successBg'],
+  ['explication du panneau de réussite', 'successText', 'successBg'],
   ['texte de réussite sur le fond', 'success', 'bg'],
   ['texte de réussite sur une carte', 'success', 'surface'],
   ['titre du panneau d’erreur', 'errorDark', 'errorBg'],
@@ -51,6 +52,8 @@ const graphique: [string, keyof typeof colors, keyof typeof colors][] = [
   ['contour de l’ampoule d’indice', 'hintStroke', 'bg'],
   ['remplissage des barres de progression', 'primary', 'track'],
   ['anneau de focus', 'primary', 'bg'],
+  ['pointillé des cases STAR sur le fond', 'borderDashed', 'bg'],
+  ['pointillé des cases STAR sur une carte', 'borderDashed', 'surface'],
 ];
 
 describe('contrastes des tokens', () => {

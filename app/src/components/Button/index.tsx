@@ -32,8 +32,8 @@ const palette: Record<
   { bg: string; shadow: string; text: 'white' | 'inkMuted' | 'ink'; border?: string }
 > = {
   primary: { bg: colors.primary, shadow: colors.primaryDark, text: 'white' },
-  success: { bg: colors.success, shadow: '#14502D', text: 'white' },
-  danger: { bg: colors.errorDark, shadow: colors.errorText, text: 'white' },
+  success: { bg: colors.success, shadow: colors.successShadow, text: 'white' },
+  danger: { bg: colors.errorDark, shadow: colors.errorShadow, text: 'white' },
   secondary: { bg: colors.surface, shadow: colors.border, text: 'inkMuted', border: colors.border },
 };
 

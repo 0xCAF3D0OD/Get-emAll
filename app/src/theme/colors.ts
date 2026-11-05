@@ -39,6 +39,13 @@ export const colors = {
   infoBg: '#DCEBFA',
   streakText: '#9A3F0E',
   leagueBg: '#EDEAF2',
+  // Tokens décidés le 05.11.2026 après le squelette.
+  /** Pointillé des cases vides de STAR : 3,2:1 sur bg (WCAG 1.4.11). */
+  borderDashed: '#958A7B',
+  /** Texte d'explication du panneau de réussite (le titre reste en success). */
+  successText: '#1E4D31',
+  successShadow: '#134A2B',
+  errorShadow: '#5C1A15',
   // Médailles du classement (PROMPT.md, LeaderboardRow).
   medalGold: '#FFC94D',
   medalSilver: '#D9D4CC',

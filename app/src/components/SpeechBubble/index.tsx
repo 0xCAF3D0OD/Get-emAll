@@ -33,7 +33,7 @@ export function SpeechBubble({ speaker, text, onReplay, replayLabel }: SpeechBub
           </Pressable>
         ) : null}
       </View>
-      <AppText variant="question" accessibilityRole="header">
+      <AppText variant="bubble" accessibilityRole="header">
         {text}
       </AppText>
     </View>
