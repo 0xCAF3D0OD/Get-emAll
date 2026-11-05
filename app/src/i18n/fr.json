@@ -1,5 +1,12 @@
 {
   "app": {
     "nom": "get'emall"
+  },
+  "commun": {
+    "retour": "Retour",
+    "fermer": "Fermer",
+    "continuer": "Continuer",
+    "changer": "Changer",
+    "ouvreJobA1": "ouvre jobA1 dans le navigateur"
   }
 }
