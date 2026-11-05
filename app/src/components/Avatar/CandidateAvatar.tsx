@@ -12,6 +12,7 @@ export function CandidateAvatar({
   bg = 'peachBg',
   decorative = false,
   initial = '?',
+  framing,
 }: {
   id: AvatarId;
   expression?: AvatarExpression;
@@ -19,6 +20,7 @@ export function CandidateAvatar({
   bg?: ColorToken;
   decorative?: boolean;
   initial?: string;
+  framing?: 'face' | 'full';
 }) {
   const label = useCharacterLabel();
   const a = avatarById(id);
@@ -30,6 +32,7 @@ export function CandidateAvatar({
       size={size}
       bg={bg}
       initial={initial}
+      framing={framing}
       accessibilityLabel={decorative ? undefined : label.candidate(expression ?? 'neutre')}
     />
   );

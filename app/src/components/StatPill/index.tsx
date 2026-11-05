@@ -13,21 +13,21 @@ export type StatPillProps = {
 };
 
 const icons = {
-  streak: <Flame size={22} color={colors.streakText} fill={colors.streak} aria-hidden />,
-  xp: <Zap size={22} color={colors.ink} fill={colors.xp} aria-hidden />,
-  hints: <Lightbulb size={22} color={colors.hintStroke} fill={colors.warningBg} aria-hidden />,
+  streak: <Flame size={20} color={colors.streakText} fill={colors.streak} aria-hidden />,
+  xp: <Zap size={20} color={colors.ink} fill={colors.xp} aria-hidden />,
+  hints: <Lightbulb size={20} color={colors.hintStroke} fill={colors.warningBg} aria-hidden />,
 };
 
-/** Icône + valeur + unité sur une seule ligne, largeur adaptée au contenu. */
+/** Icône + valeur + unité sur une seule ligne ; les pastilles se partagent la largeur. */
 export function StatPill({ kind, value, unit, accessibilityLabel }: StatPillProps) {
   return (
     <View accessible accessibilityLabel={accessibilityLabel} style={styles.pill}>
       {icons[kind]}
-      <AppText variant="bodyL" numberOfLines={1}>
-        <AppText variant="bodyL" weight="heavy">
+      <AppText variant="bodyS" numberOfLines={1}>
+        <AppText variant="bodyS" weight="heavy">
           {value}
         </AppText>{' '}
-        <AppText variant="bodyL" color="inkMuted">
+        <AppText variant="bodyS" color="inkMuted">
           {unit}
         </AppText>
       </AppText>
@@ -39,12 +39,13 @@ const styles = StyleSheet.create({
   pill: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing.sm,
+    gap: spacing.xs + 2,
     backgroundColor: colors.surface,
     borderRadius: radius.pill,
-    paddingHorizontal: spacing.lg,
+    justifyContent: 'center',
+    flexGrow: 1,
+    paddingHorizontal: spacing.sm + 2,
     minHeight: spacing.touch,
     paddingVertical: spacing.sm,
-    flexShrink: 0,
   },
 });

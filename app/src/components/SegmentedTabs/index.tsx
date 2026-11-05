@@ -54,7 +54,7 @@ export function SegmentedTabs<K extends string>({
             ]}
           >
             <AppText
-              variant="bodyL"
+              variant="bodyS"
               weight={selected || look === 'solid' ? 'bold' : 'semi'}
               align="center"
               color={

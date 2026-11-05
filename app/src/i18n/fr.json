@@ -145,5 +145,129 @@
       "commencer": "Commencer ma première leçon",
       "groupe": "Recruteurs"
     }
+  },
+  "parcours": {
+    "stats": {
+      "serie": "jours",
+      "serieLu": "Série de {{n}} jours",
+      "xp": "/ {{objectif}} XP",
+      "xpLu": "{{n}} XP sur {{objectif}} aujourd’hui",
+      "indices": "indices",
+      "indicesLu": "{{n}} indices restants"
+    },
+    "offre": {
+      "intro": "Tu t’entraînes pour l’offre",
+      "titre": "{{poste}} chez {{entreprise}}",
+      "changer": "Changer",
+      "changerLu": "Changer d’offre"
+    },
+    "route": "Ta route vers le poste",
+    "etapeSur": "Étape {{n}} sur {{total}}",
+    "etape": "Étape {{n}} · {{statut}}",
+    "statuts": {
+      "terminee": "terminée",
+      "en_cours": "en cours",
+      "verrouillee": "verrouillée"
+    },
+    "lecons": {
+      "faite": "faite",
+      "en_cours": "en cours",
+      "a_venir": "à venir"
+    },
+    "continuer": "Continuer · {{lecon}}",
+    "listeLu": "Les 5 étapes de ta route"
+  },
+  "entrainement": {
+    "titre": "Entraînement libre",
+    "texte": "En dehors de ton parcours, à ton rythme.",
+    "revisions": "Révisions",
+    "revisionsSous": "{{n}} questions que tu avais ratées",
+    "rapide": "Entretien rapide avec {{nom}}",
+    "rapideSous": "3 questions · 5 min",
+    "themes": "Par thème",
+    "langue": "Langue de l’entretien",
+    "bientot": "bientôt disponible",
+    "theme": {
+      "pieges": {
+        "titre": "Questions pièges",
+        "sous": "Défauts, échecs, salaire",
+        "compte": "12 questions"
+      },
+      "star": {
+        "titre": "Méthode STAR",
+        "sous": "Raconter une situation",
+        "compte": "8 exercices"
+      },
+      "techniques": {
+        "titre": "Questions techniques",
+        "sous": "Adaptées à ton offre",
+        "compte": "15 questions"
+      },
+      "salaire": {
+        "titre": "Négocier son salaire",
+        "sous": "Marché suisse",
+        "compte": "6 exercices"
+      }
+    },
+    "langues": {
+      "fr": "Français",
+      "de": "Deutsch",
+      "en": "English"
+    }
+  },
+  "progres": {
+    "titre": "Tes progrès",
+    "serie": "{{n}} jours",
+    "serieTexte": "de série. Ton record : {{record}} jours.",
+    "xpSemaine": "XP cette semaine",
+    "lecons": "leçons",
+    "entretiens": "entretiens",
+    "classement": "Classement de la semaine",
+    "classementSous": "Tu es {{rang}}e en ligue {{ligue}}",
+    "ligues": {
+      "bronze": "Bronze",
+      "argent": "Argent",
+      "or": "Or"
+    },
+    "xpJour": "XP par jour",
+    "xpJourLu": "XP par jour cette semaine : {{detail}}. Aujourd’hui : {{auj}} XP.",
+    "jours": {
+      "L": "lundi",
+      "M1": "mardi",
+      "M2": "mercredi",
+      "J": "jeudi",
+      "V": "vendredi",
+      "S": "samedi",
+      "Auj.": "aujourd’hui"
+    },
+    "competences": "Compétences",
+    "maitrise": "Maîtrisé",
+    "enCours": "En cours · {{p}} %",
+    "aCommencer": "À commencer",
+    "derniers": "Derniers entretiens",
+    "avec": "Avec {{nom}} · {{date}}"
+  },
+  "profil": {
+    "changerAvatar": "Changer d’avatar",
+    "monEntrainement": "Mon entraînement",
+    "recruteur": "Recruteur",
+    "offre": "Offre visée",
+    "changerRecruteur": "Changer de recruteur",
+    "changerOffre": "Changer d’offre",
+    "objectif": "Objectif quotidien",
+    "objectifLu": "{{n}} XP par jour",
+    "objectifDuree": {
+      "10": "Environ 3 minutes par jour.",
+      "20": "Environ 5 minutes par jour.",
+      "30": "Environ 8 minutes par jour.",
+      "50": "Environ 12 minutes par jour."
+    },
+    "reglages": "Rappels et réglages",
+    "rappel": "Rappel quotidien",
+    "rappelSous": "Tous les jours à {{heure}}",
+    "sons": "Sons et vibrations",
+    "sonsSous": "Bonne ou mauvaise réponse",
+    "confidentialite": "Confidentialité et données",
+    "suivi": "Mon suivi jobA1"
   }
 }

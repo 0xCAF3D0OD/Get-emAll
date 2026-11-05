@@ -37,17 +37,17 @@ export function ListRow({
         </View>
       ) : null}
       <View style={styles.texts}>
-        <AppText variant="body" weight="heavy">
+        <AppText variant="bodyS" weight="heavy">
           {title}
         </AppText>
         {subtitle ? (
-          <AppText variant="caption" color="inkMuted">
+          <AppText variant="micro" color="inkMuted">
             {subtitle}
           </AppText>
         ) : null}
       </View>
       {trailing}
-      {chevron ? <ChevronRight size={24} color={colors.inkMuted} aria-hidden /> : null}
+      {chevron ? <ChevronRight size={22} color={colors.inkMuted} aria-hidden /> : null}
     </>
   );
 
@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing.lg,
-    minHeight: spacing.touch + 12,
+    gap: spacing.md,
+    minHeight: spacing.touch + 4,
     paddingVertical: spacing.sm,
   },
   texts: { flex: 1, gap: 2 },

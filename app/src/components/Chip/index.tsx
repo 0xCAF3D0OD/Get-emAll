@@ -34,8 +34,8 @@ export function Chip({ label, kind = 'next', bg, fg, icon, accessibilityLabel }:
       accessibilityLabel={accessibilityLabel ?? label}
       style={[styles.chip, { backgroundColor: colors[c.bg] }]}
     >
-      {Icon ? <Icon size={18} strokeWidth={2.5} color={colors[c.fg]} aria-hidden /> : null}
-      <AppText variant="bodyS" weight="heavy" color={c.fg}>
+      {Icon ? <Icon size={16} strokeWidth={2.75} color={colors[c.fg]} aria-hidden /> : null}
+      <AppText variant="micro" weight="heavy" color={c.fg}>
         {label}
       </AppText>
     </View>
@@ -47,10 +47,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     alignSelf: 'flex-start',
-    gap: spacing.sm,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.sm,
+    gap: spacing.xs,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
     borderRadius: radius.pill,
-    minHeight: 36,
+    minHeight: 30,
   },
 });

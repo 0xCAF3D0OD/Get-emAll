@@ -2,7 +2,7 @@ import { ActivityIndicator, Pressable, StyleSheet, View, type ViewStyle } from '
 import type { ReactNode } from 'react';
 
 import { AppText } from '@/components/AppText';
-import { colors, radius, shadows, spacing } from '@/theme';
+import { colors, radius, shadows, spacing, type TypographyToken } from '@/theme';
 
 export type ButtonVariant = 'primary' | 'success' | 'danger' | 'secondary' | 'ghost';
 
@@ -17,8 +17,10 @@ export type ButtonProps = {
   accessibilityLabel?: string;
   accessibilityHint?: string;
   style?: ViewStyle;
-  /** Hauteur réduite (≥ 44) pour les boutons secondaires dans une carte. */
+  /** Hauteur réduite (50) et libellé 16 pour les boutons placés dans une carte. */
   compact?: boolean;
+  /** Variante typographique du libellé pour le bouton « ghost » (lien). */
+  labelVariant?: TypographyToken;
 };
 
 const palette: Record<
@@ -43,6 +45,7 @@ export function Button({
   accessibilityHint,
   style,
   compact = false,
+  labelVariant,
 }: ButtonProps) {
   const inactive = disabled || loading;
 
@@ -59,7 +62,11 @@ export function Button({
         style={({ pressed }) => [styles.ghost, pressed && { opacity: 0.6 }, style]}
       >
         {icon}
-        <AppText variant="body" weight="heavy" color={inactive ? 'inkMuted' : 'primary'}>
+        <AppText
+          variant={labelVariant ?? 'body'}
+          weight="heavy"
+          color={inactive ? 'inkMuted' : 'primary'}
+        >
           {label}
         </AppText>
       </Pressable>
@@ -104,7 +111,7 @@ export function Button({
               icon
             )}
             <AppText
-              variant="bodyL"
+              variant={compact ? 'body' : 'bodyL'}
               weight="heavy"
               align="center"
               color={disabled ? 'inkMuted' : p.text}
@@ -128,7 +135,7 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   tall: { minHeight: spacing.button, paddingVertical: spacing.md },
-  compact: { minHeight: spacing.touch + 4, paddingVertical: spacing.sm },
+  compact: { minHeight: 50, paddingVertical: spacing.sm, paddingHorizontal: spacing.lg },
   ghost: {
     minHeight: spacing.touch,
     minWidth: spacing.touch,

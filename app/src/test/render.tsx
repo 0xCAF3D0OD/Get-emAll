@@ -12,7 +12,9 @@ const metrics = {
 
 /** Rend un écran avec ses fournisseurs (requêtes, zones sûres, textes). */
 export function renderScreen(ui: ReactElement) {
-  const client = new QueryClient({ defaultOptions: { queries: { retry: false } } });
+  const client = new QueryClient({
+    defaultOptions: { queries: { retry: false, gcTime: Infinity } },
+  });
   return render(
     <QueryClientProvider client={client}>
       <SafeAreaProvider initialMetrics={metrics}>{ui}</SafeAreaProvider>

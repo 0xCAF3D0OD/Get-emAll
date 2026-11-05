@@ -19,11 +19,14 @@ export type AvatarProps = {
   accessibilityLabel?: string;
   /** Transition d'image (ms) quand l'expression change. */
   transition?: number;
+  /** « face » cadre le visage ; « full » montre le personnage entier (profil, maquette 11). */
+  framing?: 'face' | 'full';
 };
 
 /**
- * Avatar rond : l'image est agrandie et décalée pour cadrer le visage, pas le corps.
- * Carré de visage = s × hauteur de l'image, centré en (0,5 ; cy).
+ * Avatar rond. Par défaut l'image est agrandie et décalée pour cadrer le visage :
+ * carré de visage = s × hauteur de l'image, centré en (0,5 ; cy). En « full », le personnage
+ * entier tient dans le rond.
  */
 export function Avatar({
   image,
@@ -33,10 +36,13 @@ export function Avatar({
   initial,
   accessibilityLabel,
   transition = 0,
+  framing = 'face',
 }: AvatarProps) {
   const [failed, setFailed] = useState(false);
-  const h = size / face.s;
+  const full = framing === 'full';
+  const h = full ? size * 0.84 : size / face.s;
   const w = (h * image.width) / image.height;
+  const top = full ? (size - h) / 2 : size / 2 - face.cy * h;
   const decorative = !accessibilityLabel;
 
   return (
@@ -69,7 +75,7 @@ export function Avatar({
             width: w,
             height: h,
             left: size / 2 - w / 2,
-            top: size / 2 - face.cy * h,
+            top,
           }}
         />
       )}

@@ -13,12 +13,14 @@ export function RecruiterAvatar({
   size,
   bg,
   decorative = false,
+  framing,
 }: {
   id: RecruiterId;
   expression?: Expression;
   size?: AvatarSize;
   bg?: ColorToken;
   decorative?: boolean;
+  framing?: 'face' | 'full';
 }) {
   const { t } = useTranslation();
   const label = useCharacterLabel();
@@ -32,6 +34,7 @@ export function RecruiterAvatar({
       initial={t(`personnages.recruteurs.${id}.nom`).charAt(0)}
       accessibilityLabel={decorative ? undefined : label.recruiter(id, expression)}
       transition={200}
+      framing={framing}
     />
   );
 }
