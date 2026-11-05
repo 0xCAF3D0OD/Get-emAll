@@ -6,7 +6,13 @@ jest.mock('expo-haptics', () => ({
 
 // Navigation simulée : les écrans sont testés seuls.
 jest.mock('expo-router', () => {
-  const router = { push: jest.fn(), replace: jest.fn(), back: jest.fn(), dismissAll: jest.fn() };
+  const router = {
+    push: jest.fn(),
+    replace: jest.fn(),
+    navigate: jest.fn(),
+    back: jest.fn(),
+    dismissAll: jest.fn(),
+  };
   return {
     router,
     useRouter: () => router,

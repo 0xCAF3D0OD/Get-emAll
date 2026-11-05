@@ -374,5 +374,46 @@
       "extraitLu": "Ta réponse : {{texte}}"
     },
     "citation": "« {{texte}} »"
+  },
+  "classement": {
+    "titre": "Classement",
+    "onglets": "Type de classement",
+    "maLigue": "Ma ligue",
+    "mesAmis": "Mes amis",
+    "ligue": "Ligue {{ligue}}",
+    "ligueSous": "Se termine dans {{n}} jours · personne ne descend",
+    "liste": "Classement de la ligue",
+    "rangLu": "{{place}} place, {{nom}}, {{xp}} XP",
+    "rangMoiLu": "{{place}} place, toi, visible comme {{nom}}, {{xp}} XP",
+    "toi": "Toi",
+    "visible": "Visible comme « {{nom}} »",
+    "xp": "{{n}} XP",
+    "montent": "Les {{n}} premiers montent en ligue {{ligue}}",
+    "note": "Ton nom n’est jamais affiché. Tu peux quitter le classement dans ton profil.",
+    "amisVide": "Tes amis apparaîtront ici.",
+    "premiere": "1re",
+    "nieme": "{{n}}e"
+  },
+  "suivi": {
+    "titre": "Mon suivi jobA1",
+    "synchro": "Synchronisé avec app.joba1.ch · il y a {{n}} min",
+    "profil": "Ton profil",
+    "complet": "{{n}} % complet",
+    "completLu": "Profil complet à {{n}} %",
+    "completer": "Compléter sur jobA1",
+    "orp": "Recherches ORP de {{mois}}",
+    "orpCompte": "{{n}} sur {{objectif}}",
+    "orpLu": "{{n}} recherches sur {{objectif}}",
+    "orpReste": "Encore {{n}} d’ici le {{date}}. Les preuves sont gardées sur jobA1.",
+    "candidatures": "Mes candidatures",
+    "toutVoir": "Tout voir",
+    "toutVoirLu": "Voir toutes mes candidatures",
+    "statuts": {
+      "entretien": "Entretien",
+      "relance": "Relance conseillée",
+      "attente": "En attente"
+    },
+    "candidatureLu": "{{poste}}, {{entreprise}}, {{detail}}. Statut : {{statut}}",
+    "entrainer": "S’entraîner pour cet entretien"
   }
 }

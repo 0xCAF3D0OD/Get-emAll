@@ -44,7 +44,7 @@ test('09 progrès : série, graphique décrit en texte, accès au classement', a
   expect(screen.getByRole('image', { name: /XP par jour cette semaine : lundi 20/ })).toBeTruthy();
   expect(screen.getByLabelText('Ton personnage, l’air fier')).toBeTruthy();
   await fireEvent.press(screen.getByRole('button', { name: /^Classement de la semaine/ }));
-  expect(router.push).toHaveBeenCalledWith('/classement');
+  expect(router.push).toHaveBeenCalledWith('/progres/classement');
 });
 
 test('11 profil : objectif en groupe radio, réglages en cases à cocher', async () => {
@@ -58,5 +58,5 @@ test('11 profil : objectif en groupe radio, réglages en cases à cocher', async
   await fireEvent.press(rappel);
   expect(useReglages.getState().rappel).toBe(!avant);
   await fireEvent.press(screen.getByRole('button', { name: 'Mon suivi jobA1' }));
-  expect(router.push).toHaveBeenCalledWith('/suivi-joba1');
+  expect(router.push).toHaveBeenCalledWith('/profil/suivi-joba1');
 });

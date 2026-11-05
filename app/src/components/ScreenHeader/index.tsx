@@ -40,7 +40,7 @@ export function ScreenHeader({ title, subtitle, onBack, backLabel, children }: S
             </AppText>
           ) : null}
           {subtitle ? (
-            <AppText variant="bodyS" color="inkMuted">
+            <AppText variant="micro" color="inkMuted">
               {subtitle}
             </AppText>
           ) : null}

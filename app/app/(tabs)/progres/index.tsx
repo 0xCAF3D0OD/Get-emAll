@@ -82,7 +82,7 @@ export default function Progres() {
             ligue: t(`progres.ligues.${p.ligue}`),
           })}
           leading={<IconTile icon={Trophy} bg="warningBg" fg="hintStroke" size={48} />}
-          onPress={() => router.push('/classement')}
+          onPress={() => router.push('/progres/classement')}
         />
       </Card>
 

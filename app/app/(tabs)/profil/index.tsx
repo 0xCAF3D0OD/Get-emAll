@@ -159,7 +159,7 @@ export default function Profil() {
           }
         />
         <View style={styles.rule} />
-        <ListRow title={t('profil.suivi')} onPress={() => router.push('/suivi-joba1')} />
+        <ListRow title={t('profil.suivi')} onPress={() => router.push('/profil/suivi-joba1')} />
       </Card>
     </Screen>
   );

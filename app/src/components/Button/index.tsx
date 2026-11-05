@@ -23,6 +23,8 @@ export type ButtonProps = {
   labelVariant?: TypographyToken;
   /** Pour un bouton qui déplie un contenu (équivalent d'aria-expanded). */
   expanded?: boolean;
+  /** Icône après le libellé (lien externe) plutôt qu'avant. */
+  iconAfter?: boolean;
 };
 
 const palette: Record<
@@ -49,6 +51,7 @@ export function Button({
   compact = false,
   labelVariant,
   expanded,
+  iconAfter = false,
 }: ButtonProps) {
   const inactive = disabled || loading;
 
@@ -64,7 +67,7 @@ export function Button({
         hitSlop={8}
         style={({ pressed }) => [styles.ghost, pressed && { opacity: 0.6 }, style]}
       >
-        {icon}
+        {iconAfter ? null : icon}
         <AppText
           variant={labelVariant ?? 'body'}
           weight="heavy"
@@ -72,6 +75,7 @@ export function Button({
         >
           {label}
         </AppText>
+        {iconAfter ? icon : null}
       </Pressable>
     );
   }

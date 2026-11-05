@@ -9,17 +9,21 @@ export default function TabsLayout() {
   const { t } = useTranslation();
   return (
     <Tabs
+      backBehavior="history"
       screenOptions={{ headerShown: false }}
-      tabBar={({ state, navigateToTab }) => (
-        <TabBar
-          tabs={order.map((key) => ({ key, label: t(`onglets.${key}`) }))}
-          active={(state.routes[state.index]?.name ?? 'parcours') as TabKey}
-          onSelect={(key) => {
-            const route = state.routes.find((r) => r.name === key);
-            if (route) navigateToTab(route.key);
-          }}
-        />
-      )}
+      tabBar={({ state, navigateToTab }) => {
+        const nom = state.routes[state.index]?.name ?? 'parcours';
+        return (
+          <TabBar
+            tabs={order.map((key) => ({ key, label: t(`onglets.${key}`) }))}
+            active={nom as TabKey}
+            onSelect={(key) => {
+              const route = state.routes.find((r) => r.name === key);
+              if (route) navigateToTab(route.key);
+            }}
+          />
+        );
+      }}
     >
       {order.map((name) => (
         <Tabs.Screen key={name} name={name} options={{ title: t(`onglets.${name}`) }} />
