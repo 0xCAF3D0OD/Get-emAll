@@ -20,6 +20,19 @@ updates:
         update-types: ['version-update:semver-major']
       - dependency-name: eslint
         update-types: ['version-update:semver-major']
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
+
+  - package-ecosystem: uv
+    directory: /api
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      mineures-et-correctifs:
+        update-types:
+          - minor
+          - patch
 
   - package-ecosystem: github-actions
     directory: /
