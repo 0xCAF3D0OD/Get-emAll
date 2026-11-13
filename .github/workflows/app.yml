@@ -38,3 +38,17 @@ jobs:
         run: npm run e2e
         env:
           CI: '1'
+
+  audit:
+    # Failles des dépendances livrées dans l'app (les dépendances de dev ne bloquent pas).
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Audit des dépendances livrées (haute ou critique)
+        run: npm audit --omit=dev --audit-level=high

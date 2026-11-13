@@ -1,0 +1,33 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /app
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      mineures-et-correctifs:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      # Ces versions majeures suivent le SDK Expo : on les fait à la main.
+      - dependency-name: expo
+        update-types: ['version-update:semver-major']
+      - dependency-name: react
+        update-types: ['version-update:semver-major']
+      - dependency-name: react-native
+        update-types: ['version-update:semver-major']
+      - dependency-name: eslint
+        update-types: ['version-update:semver-major']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      mineures-et-correctifs:
+        update-types:
+          - minor
+          - patch
