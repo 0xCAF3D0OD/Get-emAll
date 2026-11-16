@@ -12,7 +12,7 @@ dependencies = [
     "httpx>=0.28.1",
     # Le schéma de procrastinate est appliqué par une migration Alembic :
     # toute montée de version doit s'accompagner d'une migration.
-    "procrastinate>=3.10.0,<3.11",
+    "procrastinate>=3.10.0,<3.12",
     "psycopg[binary]>=3.3.6",
     "pydantic-settings>=2.15.0",
     "sqlalchemy[asyncio]>=2",
